@@ -27,7 +27,7 @@ inquirer
         type: 'checkbox',
         message: 'What license will you use?',
         name: 'license',
-        choices: ['MIT', 'Apache','GNU General Public License v3.0']
+        choices: ['The MIT License', 'Apache 2.0 License','GNU General Public License v3.0']
       },
       {
         type: 'input',
@@ -51,10 +51,10 @@ inquirer
       },
   ])
   .then((response)=> {
-    if(response.license =='MIT') {
+    if(response.license =='The MIT License') {
         var licenseBadge = `[!['License: MIT'](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
       }  
-    else if(response.license == 'Apache'){
+    else if(response.license == 'Apache 2.0 License'){
         var licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
     }
     else if(response.license == 'GNU General Public License v3.0'){
@@ -65,7 +65,7 @@ inquirer
     }
       // Title, Description(maybe choice of image and link),table of contents(Y OR N), installation, Usage, 
       //License, constributing guidelines, tests, Questions: enter githubuserName -> github profile, enter email -> how to contact
-const markdownFile = `# ${response.title} \n
+const markdownFile = `# ${response.title} ${licenseBadge} \n
 ## Description:\n
 ${response.description} \n 
 ## Table of Contents\n
@@ -79,8 +79,8 @@ ${response.description} \n
 ${response.installation} \n
 ## Usage:\n
 ${response.usage} \n 
-## License:\n
-${licenseBadge} ${response.license} \n 
+## License:${licenseBadge}\n
+This project is covered under the ${response.license} \n 
 ## Contributing:\n
 ${response.contributing} \n 
 ## Tests:\n
