@@ -1,0 +1,22 @@
+{
+  "name": "inquiremereadme",
+  "version": "1.0.0",
+  "description": "creates a readme with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sambalogna/InquireMeReadMe.git"
+  },
+  "author": "Samuel Mandel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sambalogna/InquireMeReadMe/issues"
+  },
+  "homepage": "https://github.com/Sambalogna/InquireMeReadMe#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
