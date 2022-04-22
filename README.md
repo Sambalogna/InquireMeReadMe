@@ -3,6 +3,7 @@
 ## Description:
 
 This project uses npm package Inquirer to prompt the user and generate a Readme based on their specifications. 
+![Video](https://watch.screencastify.com/v/VoRAWL2R4r7cR1DjMVIH)
  
 ## Table of Contents
 
