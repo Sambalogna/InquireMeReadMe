@@ -86,7 +86,7 @@ ${response.contributing} \n
 ## Tests:\n
 ${response.tests} \n 
 ## Questions:\n
-Here is my Github profile [My Github](github.com/${response.githubUser})\n 
+Here is my Github profile [My Github](https://github.com/${response.githubUser})\n 
 Any Questions? Contact here: ${response.email}\n
                             `
   //title is appended to the file name to give each user a unique filename                          
