@@ -13,6 +13,41 @@ inquirer
         message: 'Describe your project?',
         name: 'description'
       },
+      {
+        type: 'input',
+        message: 'How does a user install your project?',
+        name: 'installation'
+      },
+      {
+        type: 'input',
+        message: 'Usage information?',
+        name: 'usage'
+      },
+      {
+        type: 'input',
+        message: 'What license did you use?',
+        name: 'license'
+      },
+      {
+        type: 'input',
+        message: 'What are your contributing guidelines?',
+        name: 'contributing'
+      },
+      {
+        type: 'input',
+        message: 'Does your project have tests?',
+        name: 'tests'
+      },
+      {
+        type: 'input',
+        message: 'What is your github username?',
+        name: 'githubUser'
+      },
+      {
+        type: 'input',
+        message: 'What email address can be used to contact you about your project?',
+        name: 'email'
+      },
   ])
   .then((response)=> {
       console.log(response)
@@ -40,9 +75,10 @@ inquirer
                             ##Tests:\n
                             ${tests} \n 
                             ##Questions:\n
-                            ${questions} \n 
-
+                            ${githubUser} \n 
+                            ${email}\n
                             `
-  fs.writeFile(`${}readme.md`, markdownFile, (err)=>
+  //title is appended to the file name to give each user a unique filename                          
+  fs.writeFile(`${title}readme.md`, markdownFile, (err)=>
   err ? console.error(err) : console.log('Your ReadMe has beeen created.'))
   });
