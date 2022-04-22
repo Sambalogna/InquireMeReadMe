@@ -21,7 +21,7 @@ inquirer
       //License, constributing guidelines, tests, Questions: enter githubuserName -> github profile, enter email -> how to contact
       const markdownFile = `#${title} \n
                             ##Description:\n
-                            ${} \n 
+                            ${description} \n 
                             ##Table of Contents\n
                             *[Installation](#Installation)\n
                             *[Usage](#Usage)\n
@@ -30,17 +30,19 @@ inquirer
                             *[Tests](#Tests)\n
                             *[Questions](#Questions)\n
                             ##Installation\n
-                            ${} \n
+                            ${installation} \n
                             ##Usage:\n
-                            ${} \n 
+                            ${usage} \n 
                             ##License:\n
-                            ${} \n 
+                            ${license} \n 
                             ##Contributing:\n
-                            ${} \n 
+                            ${contributing} \n 
                             ##Tests:\n
-                            ${} \n 
+                            ${tests} \n 
                             ##Questions:\n
-                            ${} \n 
+                            ${questions} \n 
 
                             `
-  })
+  fs.writeFile(`${}readme.md`, markdownFile, (err)=>
+  err ? console.error(err) : console.log('Your ReadMe has beeen created.'))
+  });
