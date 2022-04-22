@@ -54,31 +54,31 @@ inquirer
 
       // Title, Description(maybe choice of image and link),table of contents(Y OR N), installation, Usage, 
       //License, constributing guidelines, tests, Questions: enter githubuserName -> github profile, enter email -> how to contact
-      const markdownFile = `#${title} \n
-                            ##Description:\n
-                            ${description} \n 
-                            ##Table of Contents\n
-                            *[Installation](#Installation)\n
-                            *[Usage](#Usage)\n
-                            *[License](#License)\n
-                            *[Contributing](#Contributing)\n
-                            *[Tests](#Tests)\n
-                            *[Questions](#Questions)\n
-                            ##Installation\n
-                            ${installation} \n
-                            ##Usage:\n
-                            ${usage} \n 
-                            ##License:\n
-                            ${license} \n 
-                            ##Contributing:\n
-                            ${contributing} \n 
-                            ##Tests:\n
-                            ${tests} \n 
-                            ##Questions:\n
-                            ${githubUser} \n 
-                            ${email}\n
+const markdownFile = `#${response.title} \n
+##Description:\n
+${response.description} \n 
+##Table of Contents\n
+*[Installation](#Installation)\n
+*[Usage](#Usage)\n
+*[License](#License)\n
+*[Contributing](#Contributing)\n
+*[Tests](#Tests)\n
+*[Questions](#Questions)\n
+##Installation\n
+${response.installation} \n
+##Usage:\n
+${response.usage} \n 
+##License:\n
+${response.license} \n 
+##Contributing:\n
+${response.contributing} \n 
+##Tests:\n
+${response.tests} \n 
+##Questions:\n
+Here is my Github profile github.com/${response.githubUser} \n 
+Any Questions? Contact here:${response.email}\n
                             `
   //title is appended to the file name to give each user a unique filename                          
-  fs.writeFile(`${title}readme.md`, markdownFile, (err)=>
+  fs.writeFile('readme.md', markdownFile, (err)=>
   err ? console.error(err) : console.log('Your ReadMe has beeen created.'))
   });
