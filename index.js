@@ -54,29 +54,29 @@ inquirer
 
       // Title, Description(maybe choice of image and link),table of contents(Y OR N), installation, Usage, 
       //License, constributing guidelines, tests, Questions: enter githubuserName -> github profile, enter email -> how to contact
-const markdownFile = `#${response.title} \n
-##Description:\n
+const markdownFile = `# ${response.title} \n
+## Description:\n
 ${response.description} \n 
-##Table of Contents\n
-*[Installation](#Installation)\n
-*[Usage](#Usage)\n
-*[License](#License)\n
-*[Contributing](#Contributing)\n
-*[Tests](#Tests)\n
-*[Questions](#Questions)\n
-##Installation\n
+## Table of Contents\n
+* [Installation](#Installation)\n
+* [Usage](#Usage)\n
+* [License](#License)\n
+* [Contributing](#Contributing)\n
+* [Tests](#Tests)\n
+* [Questions](#Questions)\n
+## Installation\n
 ${response.installation} \n
-##Usage:\n
+## Usage:\n
 ${response.usage} \n 
-##License:\n
+## License:\n
 ${response.license} \n 
-##Contributing:\n
+## Contributing:\n
 ${response.contributing} \n 
-##Tests:\n
+## Tests:\n
 ${response.tests} \n 
-##Questions:\n
+## Questions:\n
 Here is my Github profile github.com/${response.githubUser} \n 
-Any Questions? Contact here:${response.email}\n
+Any Questions? Contact here: ${response.email}\n
                             `
   //title is appended to the file name to give each user a unique filename                          
   fs.writeFile('readme.md', markdownFile, (err)=>

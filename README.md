@@ -1,47 +1,47 @@
-#InquireMeReadMe 
+# InquireMeReadMe 
 
-##Description:
+## Description:
 
-using the node package inquirer, the project creates a readme using inquirer prompt 
+My project makes a readme for you using node.js 
  
-##Table of Contents
+## Table of Contents
 
-*[Installation](#Installation)
+* [Installation](#Installation)
 
-*[Usage](#Usage)
+* [Usage](#Usage)
 
-*[License](#License)
+* [License](#License)
 
-*[Contributing](#Contributing)
+* [Contributing](#Contributing)
 
-*[Tests](#Tests)
+* [Tests](#Tests)
 
-*[Questions](#Questions)
+* [Questions](#Questions)
 
-##Installation
+## Installation
 
-clone the repository then run npm install, next in the command prompt type node and the index file in the repository 
+Step 1: clone the repo, Step 2: npm i, Step 3: run node and the index file using the command prompt 
 
-##Usage:
+## Usage:
 
-Use this to create a readme 
+Please use this for making READMEs 
  
-##License:
+## License:
 
 MIT 
  
-##Contributing:
+## Contributing:
 
-Contributing required contacting the owner of this repository 
+Contribute via email to my email 
  
-##Tests:
+## Tests:
 
 no 
  
-##Questions:
+## Questions:
 
 Here is my Github profile github.com/Sambalogna 
  
-Any Questions? Contact here:smandel4@gmail.com
+Any Questions? Contact here: smandel4@gmail.com
 
                             
