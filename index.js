@@ -24,9 +24,10 @@ inquirer
         name: 'usage'
       },
       {
-        type: 'input',
-        message: 'What license did you use?',
-        name: 'license'
+        type: 'checkbox',
+        message: 'What license will you use?',
+        name: 'license',
+        choices: ['MIT', 'Apache','GNU General Public License v3.0']
       },
       {
         type: 'input',
@@ -50,8 +51,18 @@ inquirer
       },
   ])
   .then((response)=> {
-      console.log(response)
-
+    if(response.license =='MIT') {
+        var licenseBadge = `[!['License: MIT'](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+      }  
+    else if(response.license == 'Apache'){
+        var licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    }
+    else if(response.license == 'GNU General Public License v3.0'){
+        var licenseBadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+    }
+    else{
+        console.log('No License?')
+    }
       // Title, Description(maybe choice of image and link),table of contents(Y OR N), installation, Usage, 
       //License, constributing guidelines, tests, Questions: enter githubuserName -> github profile, enter email -> how to contact
 const markdownFile = `# ${response.title} \n
@@ -69,13 +80,13 @@ ${response.installation} \n
 ## Usage:\n
 ${response.usage} \n 
 ## License:\n
-${response.license} \n 
+${licenseBadge} ${response.license} \n 
 ## Contributing:\n
 ${response.contributing} \n 
 ## Tests:\n
 ${response.tests} \n 
 ## Questions:\n
-Here is my Github profile github.com/${response.githubUser} \n 
+Here is my Github profile [My Github](github.com/${response.githubUser})\n 
 Any Questions? Contact here: ${response.email}\n
                             `
   //title is appended to the file name to give each user a unique filename                          

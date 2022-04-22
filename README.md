@@ -1,8 +1,8 @@
-# InquireMeReadMe 
+# yes 
 
 ## Description:
 
-My project makes a readme for you using node.js 
+yes 
  
 ## Table of Contents
 
@@ -20,28 +20,28 @@ My project makes a readme for you using node.js
 
 ## Installation
 
-Step 1: clone the repo, Step 2: npm i, Step 3: run node and the index file using the command prompt 
+yese 
 
 ## Usage:
 
-Please use this for making READMEs 
+yes 
  
 ## License:
 
-MIT 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) GNU General Public License v3.0 
  
 ## Contributing:
 
-Contribute via email to my email 
+yes 
  
 ## Tests:
 
-no 
+yes 
  
 ## Questions:
 
-Here is my Github profile github.com/Sambalogna 
+Here is my Github profile [My Github](github.com/yes)
  
-Any Questions? Contact here: smandel4@gmail.com
+Any Questions? Contact here: yes
 
                             
