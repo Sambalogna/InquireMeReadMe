@@ -1,8 +1,8 @@
-# inquireMeReadMe [!['License: MIT'](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+# InquireMeReadMe [!['License: MIT'](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Description:
 
-This project generates a readme using prompts from the npm package inquirer 
+This project uses the npm package inquirer to generate a readme for the user. 
  
 ## Table of Contents
 
@@ -20,27 +20,27 @@ This project generates a readme using prompts from the npm package inquirer
 
 ## Installation
 
-1. clone my repo 2. npm i from the command prompt. 3. node index 
+Install this project, by cloning this repository. Then from the folder within the command prompt nmp install and finally node index from the command prompt.  
 
 ## Usage:
 
-use this program to generate readMes 
+Use this program to generate a readMe.md 
  
-## License:[!['License: MIT'](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## License: [!['License: MIT'](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project is covered under the The MIT License 
  
 ## Contributing:
 
-Contribute by reaching out to me. The email to address is under the questions section 
+Contribute by sending a message to the email provided in questions. 
  
 ## Tests:
 
-There are no tests for this project. 
+There were no test written for this project 
  
 ## Questions:
 
-Here is my Github profile [My Github](github.com/sambalogna)
+Here is my Github profile [My Github](github.com/Sambalogna)
  
 Any Questions? Contact here: smandel4@gmail.com
 

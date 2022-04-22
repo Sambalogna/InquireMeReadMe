@@ -79,7 +79,7 @@ ${response.description} \n
 ${response.installation} \n
 ## Usage:\n
 ${response.usage} \n 
-## License:${licenseBadge}\n
+## License: ${licenseBadge}\n
 This project is covered under the ${response.license} \n 
 ## Contributing:\n
 ${response.contributing} \n 
